@@ -16,6 +16,7 @@ setup(
     long_description_content_type='text/markdown',
     license="MIT",
     url='https://github.com/jrdcasa/passwd-encrypt',
+    download_url='https://github.com/jrdcasa/passwd-encrypt/archive/refs/tags/v_0.2.1.tar.gz',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Education',
