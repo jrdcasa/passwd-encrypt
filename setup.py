@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 from os import path
+from passwd_encrypt import __version__
 
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
@@ -7,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='passwd_encrypt',
-    version='0.2',
+    version=__version__,
     author='Javier Ramos',
     author_email='jrdcasa@gmail.com',
     description="A simple tool to generate RSA keys and use them to encrypt/decrypt messages.",
