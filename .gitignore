@@ -2,7 +2,7 @@ dist/
 passwd_encrypt.egg-info
 .idea/
 nohup*
-recipes/*.i*
+recipes/.i*
 # OS generated files #
 ######################
 .DS_Store
