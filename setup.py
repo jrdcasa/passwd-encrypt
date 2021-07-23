@@ -7,7 +7,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='passwd_encrypt',
-    version='0.2',
+    version='0.2.1',
     author='Javier Ramos',
     author_email='jrdcasa@gmail.com',
     description="A simple tool to generate RSA keys and use them to encrypt/decrypt messages.",
