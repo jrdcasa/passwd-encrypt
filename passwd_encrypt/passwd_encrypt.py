@@ -86,9 +86,6 @@ def pw_create_rsa_key(pattern, bits=4096):
     fileout.write(public_key)
     fileout.close()
 
-    print("Private file was created in {}".format(pattern+".pem"))
-    print("Public  file was created in {}".format(pattern + ".pem.pub"))
-
 
 # =============================================================================
 def pw_encrypt_msg(public_key_file, msg, fout_name="passwd_encrypted.bin"):
@@ -114,7 +111,6 @@ def pw_encrypt_msg(public_key_file, msg, fout_name="passwd_encrypted.bin"):
     f_out.write(enc_data)
     f_out.close()
     fpublic.close()
-    print("Message encrypted in {}".format(fout_name))
 
     return enc_data
 
@@ -173,10 +169,14 @@ if __name__ == '__main__':
     # Create keys
     if arg.createkeys:
         pw_create_rsa_key(arg.createkeys)
+        print("Private file was created in {}".format(arg.createkeys+".pem"))
+        print("Public  file was created in {}".format(arg.createkeys + ".pem.pub"))
 
     # Encrypt message
     if arg.encrypt:
-        pw_encrypt_msg(arg.encrypt[0], arg.encrypt[1])
+        fout_name = "passwd_encrypted.bin"
+        pw_encrypt_msg(arg.encrypt[0], arg.encrypt[1], fout_name=fout_name)
+        print("Message encrypted in {}".format(fout_name))
 
     # Decrypt message
     if arg.decrypt:

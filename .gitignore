@@ -3,6 +3,8 @@ passwd_encrypt.egg-info
 .idea/
 nohup*
 recipes/.i*
+build/
+passwd_encrypt/__pycache__/
 # OS generated files #
 ######################
 .DS_Store
