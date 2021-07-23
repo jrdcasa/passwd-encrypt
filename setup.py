@@ -15,7 +15,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     license="MIT",
-    url='https://github.com/jrdcasa',
+    url='https://github.com/jrdcasa/passwd-encrypt',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Education',
