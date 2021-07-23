@@ -4,8 +4,8 @@ import argparse
 import os
 import sys
 
-VERSION = 0.2
-DATE = "20-Jul-2021"
+VERSION = 0.2.1
+DATE = "22-Jul-2021"
 AUTHOR = "Javier Ramos"
 GITHUB = "https://github.com/jrdcasa"
 
