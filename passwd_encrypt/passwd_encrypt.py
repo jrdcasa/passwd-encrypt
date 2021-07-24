@@ -3,9 +3,7 @@ from Crypto.Cipher import PKCS1_OAEP
 import argparse
 import os
 import sys
-from passwd_encrypt import __version__
 
-VERSION = __version__
 DATE = "22-Jul-2021"
 AUTHOR = "Javier Ramos"
 GITHUB = "https://github.com/jrdcasa"
